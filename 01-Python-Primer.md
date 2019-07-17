@@ -165,4 +165,126 @@ def is_multiple(n, m):
 R-1.2
 ```
 def is_even(k):
-	
+	return (k & 1 == 0)
+```
+
+R-1.3
+```
+def minmax(data):
+	min=max=data[0]
+	for i in data:
+		if min >= i:
+			min = i
+		if max <= i:
+			max = i
+	return min, max
+```
+R-1.4
+```
+def sMulti(l):
+	sum = 0
+	for i in range(1, l+1):
+		sum += i*i
+	return sum
+```	
+
+R-1.5
+```
+total = sum(i*i for i in range(1, n+1))
+```
+
+R-1.6
+```
+total = sum(i*i for i in range(1, n+1) if i%2 != 0)
+```
+
+R-1.8: n+k
+
+R-1.9: range(50, 81, 10)
+
+R-1.10: range(8, -10, -2)
+
+R-1.11: [pow(2,i) for i in range(9)] or [2**i for i in range(9)]
+
+R-1.12
+```
+def ownChoice(data):
+	return data[randrange(len(data))]
+```
+
+R-1.13
+```
+def reverse(data):
+	return [data[-i-1] for i in range(len(data))]
+```
+
+R-1.14
+```
+def has_odd_pair(data):
+	count = 0
+	for j in range(len(data)):
+		if data[j] % 2 == 1:
+			count++
+			if count == 2:
+				return True
+		return False
+```
+
+R-1.15
+```
+def disNum(data):
+	countedList = []
+	for i in data:
+		if i in countedList:
+			return False
+		else:
+			countedList.append(i)
+	return True
+```
+
+R-1.16
+```
+data[j] = data[j] * factor
+```
+
+R-1.17
+```
+def scale(data, factor):
+	for i in range(len(data)):
+		data[i] = data[i] * factor
+	return data
+```
+
+R-1.18
+```
+[ k*(k+1) for k in range(10) ]
+```
+
+R-1.19
+```
+[chr(k) for k in range(97, 123)]
+```
+
+R-1.20
+```
+def shuffle(data):
+	newdata = []
+	while data is not []:
+		newdata.append(data.pop(randint(0, len(data))
+	return newdata
+```
+
+R-1.21
+```
+lines = []
+while True:
+	try:
+		single = input()
+		lines.append(single)
+	except EOFError:
+		break
+
+print('\n'.join(reversed(lines)))
+```
+
+
