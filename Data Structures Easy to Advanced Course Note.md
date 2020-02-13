@@ -74,4 +74,76 @@ Insert at tail O(1) O(1)
 Remove at hear ...
 Remove at tail O(n) O(1)
 
- 
+## Stack
+
+A stack is a one-ended linear data structure which models a real world stack by having two primary operations, namely push and pop. lifo 
+
+Instructions
+pop()
+push()
+
+Used
+text editor
+compiler syntax checking for matching brackets and braces
+model a pile of books or plates
+used behind the scenes to support recursion by keeping track of previous function calls
+depth first search (DFS) on a graph
+
+Example - Brackets
+Let S be a stack
+For bracket in bracket_string:
+    rev = getReversedBracket(bracket)
+    if isLeftBracket(bracket):
+        S.push(bracket)
+    Else If S.isEmpty() or S.pop() != rev:
+        return false
+return S.isEmpty()
+
+Tower of Hanoi
+
+Stack Source Code
+
+## Queue
+
+A queue is a linear data structure which models real world queues by having two primary operations, namely **enqueue/offer** and **dequeue/pull**. Add element to the back, remove element from the front.
+
+Used
+
+waiting line models
+keep track of the x most recently added elements
+web server request management where you want first come first serve
+breath first search(BFS) graph
+
+Queue Example - BFS
+
+## Priority Queues(PQs) with an interlude on heaps
+
+A priority queue, each element has a certain priority. Priority queues only supports comparable data, meaning the data inserted into the priority queue must be able to be ordered in some way either from least to greatest or greatest to least. 
+
+## Heap
+
+A heap is a tree based DS that satisfies the heap invariant: if A is a parent node of B then A is ordered with repect to B for all nodes A, B in the heap.
+
+Max heap, min heap
+
+Used
+Dijkstra's Shortest Path algorithm
+dynamically fetch the 'next best' or 'next worst' element.
+Huffman coding
+Best First Search (BFS) algorithms
+Minimum Spanning Tree (MST) algorithms
+
+Binary Heap Construction O(n)
+
+## Turning Min PQ into Max PQ
+
+## Ways of Implementing a PQ
+
+Binary Heap - Polling O(log(n)), Removing O(n)
+Fibonacci Heap
+Binomial Heap
+Pairing Heap
+
+## Removing Elements From Binary Heap in O(log(n))
+
+
