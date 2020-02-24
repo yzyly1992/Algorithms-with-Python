@@ -121,3 +121,30 @@ def reverse_iterative(S):
 ```
 
 	
+4.7 Exercises
+R-4.1 
+def maxium(S, n):
+	max = 0
+	while n > 0:
+		if S[0] > max:
+			max = S[0]
+		n = n - 1
+		S[0].pop()
+	return max
+
+or:
+
+def maxium(S, n):
+	if n = 1:
+		return S[0]
+	if S[0] > S[1]:
+		S[1].pop()
+	else:
+		S[0].pop()
+	n = n - 1
+	return maxium(S, n)
+
+
+
+		
+	

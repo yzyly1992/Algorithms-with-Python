@@ -146,4 +146,13 @@ Pairing Heap
 
 ## Removing Elements From Binary Heap in O(log(n))
 
+## Union Find
 
+Union Find is a data structure that keeps track of elements which are split into one or more disjoint set. Two primary operations: find and union
+
+Use:
+Kruskal's minimum spanning tree algorithm
+Grid percolation
+Network connectivity
+Least common ancestor in trees
+Image processing.
